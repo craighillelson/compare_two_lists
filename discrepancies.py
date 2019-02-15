@@ -6,8 +6,7 @@ LST2 = []
 def import_text_file(text_file, lst):
     """ import text file and throw the contents into a list """
     users = open(text_file, "r")
-    for email in users:
-        lst.append(email)
+    users = [lst.append(email) for email in users]
 
 # run import_text_file for both files
 import_text_file('users_1.txt', LST1)
@@ -21,7 +20,7 @@ DISCREPANCIES = list(LST1_LST2) + list(LST2_LIST1)
 # output file
 DISCREPANCIES_FILE = open("discrepancies.txt", "w")
 for user in DISCREPANCIES:
-    DISCREPANCIES_FILE.write(user+"\n")
+    DISCREPANCIES_FILE.write(user)
 
 # update user
-print "'discrepancies.txt' exported successfully"
+print("'discrepancies.txt' exported successfully")
