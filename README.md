@@ -1,10 +1,12 @@
 # compare_two_lists
 
+Python 3.7.2
+
 ## in_both.py does the following:
 
 * imports two text files
 * compares them
-* outputs a text file named 'in_both.txt' 
+* outputs a text file including values in both text files named 'in_both.txt'
 
 ## discreapancies.py does the following:
 
