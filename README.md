@@ -8,7 +8,7 @@ Python 3.7.2
 * compares them
 * outputs a text file including values in both text files named 'in_both.txt'
 
-## discreapancies.py does the following:
+## discrepancies.py does the following:
 
 * imports two text files
 * compares them and finds any values that are in one file but not the other
