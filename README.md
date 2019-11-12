@@ -1,6 +1,6 @@
 # compare_two_lists
 
-Python 3.7.2
+Python 3.8
 
 ## in_both.py does the following:
 
