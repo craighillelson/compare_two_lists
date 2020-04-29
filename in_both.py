@@ -1,4 +1,4 @@
-""" __doc__ """
+"""Compare the contents of two lists. Output the items common to both."""
 
 LST1 = []
 LST2 = []
