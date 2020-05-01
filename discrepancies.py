@@ -4,7 +4,7 @@ LST1 = []
 LST2 = []
 
 def import_text_file(text_file, lst):
-    """ import text file and throw the contents into a list """
+    """Import text file and populate a list with its contents."""
     users = open(text_file, 'r')
     users = [lst.append(email) for email in users]
 
