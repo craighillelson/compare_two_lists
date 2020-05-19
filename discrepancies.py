@@ -1,12 +1,24 @@
-"""Compare two lists. Output the differences between the two."""
+"""
+Compare two lists and output a text file with the discrepancies between the
+two.
+"""
 
 LST1 = []
 LST2 = []
 
+
 def import_text_file(text_file, lst):
-    """Import text file and populate a list with its contents."""
+    """Import a text file and populate a list with its contents."""
     users = open(text_file, 'r')
     users = [lst.append(email) for email in users]
+
+
+def update_user():
+    """Let user know that a file containing the discrepancies between the
+    two lists has been exported."""
+
+    print('"discrepancies.txt" exported successfully')
+
 
 # run import_text_file for both files
 import_text_file('users_1.txt', LST1)
@@ -23,4 +35,4 @@ for user in DISCREPANCIES:
     DISCREPANCIES_FILE.write(user)
 
 # update user
-print('"discrepancies.txt" exported successfully')
+update_user()
