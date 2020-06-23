@@ -17,7 +17,7 @@ def compare_sets(a, b):
     return set(a) - set(b)
 
 
-def discreps():
+def find_discrepancies():
     """Write discrepancies to a text file."""
     if DISCREPANCIES:
         DISCREPANCIES_FILE = open('discrepancies.txt', 'w')
@@ -33,4 +33,4 @@ LST2 = import_text_file('users_2.txt')
 LST1_LST2 = compare_sets(LST1, LST2)
 LST2_LIST1 = compare_sets(LST2, LST1)
 DISCREPANCIES = list(LST1_LST2) + list(LST2_LIST1)
-discreps()
+find_discrepancies()
