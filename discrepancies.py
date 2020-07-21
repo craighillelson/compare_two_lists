@@ -1,6 +1,5 @@
 """
 Compare two lists.
-
 Output a text file with the discrepancies between the two.
 """
 
@@ -8,8 +7,7 @@ Output a text file with the discrepancies between the two.
 def import_text_file(text_file):
     """Import a text file and populate a list with its contents."""
     lst = []
-    lst = open(text_file).readlines()
-    return lst
+    return open(text_file).readlines()
 
 
 def compare_sets(a, b):
