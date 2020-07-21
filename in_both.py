@@ -4,8 +4,7 @@
 def import_text_file(text_file):
     """Import text file and throw the contents into a list."""
     lst = []
-    lst = open(text_file).readlines()
-    return lst
+    return open(text_file).readlines()
 
 
 LST1 = import_text_file('users_1.txt')
